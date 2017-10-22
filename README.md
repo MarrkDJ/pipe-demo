@@ -1,2 +1,2 @@
-# pipe-demo
+# Pipe-demo
 Heroku pipe demo project
