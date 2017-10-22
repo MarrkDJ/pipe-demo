@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
 
-  envName: "Production",
+  envName: "Development",
 
-  bgColor: "LimeGreen"
+  bgColor: "crimson"
 };
