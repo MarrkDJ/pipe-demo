@@ -1,2 +1,2 @@
 # Heroku pipe demo
-Heroku pipe demo project
+Heroku pipe demo project with environments
