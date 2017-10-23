@@ -17,6 +17,8 @@ export class AppComponent implements OnInit{
   ) {}
 
   ngOnInit() {
+    this.environment = {};
+
     this.envDataService.getEnvironment()
       .subscribe((data) => {
         this.environment = data;

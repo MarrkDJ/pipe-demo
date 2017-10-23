@@ -1,7 +1,17 @@
 var express = require('express');
 var app = express();
 const path = require('path');
-const env = require('./envUtil');
+
+// Environment variables
+const node_env = process.env.NODE_ENV || "Local";
+const env_var = process.env.ENV_VAR || "Local";
+const env_color = process.env.ENV_COLOR || "DodgerBlue";
+
+const env = {
+  NODE_ENV: node_env,
+  ENV_VAR: env_var,
+  ENV_COLOR: env_color
+};
 
 app.set('port', (env.PORT || 5000));
 
