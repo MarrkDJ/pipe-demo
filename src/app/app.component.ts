@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from "../environments/environment";
+
+import { EnvironmentDataService } from "./_services/environment-data.service";
 
 @Component({
   selector: 'app-root',
@@ -9,14 +10,16 @@ import { environment } from "../environments/environment";
 export class AppComponent implements OnInit{
   title = 'app works!';
 
-  envName;
-  bgColor;
+  environment;
+
+  constructor (
+    private envDataService: EnvironmentDataService
+  ) {}
 
   ngOnInit() {
-    console.log("Hallo");
-    console.log("Name", environment.envName);
-    console.log("Color", environment.bgColor);
-    this.envName = environment.envName;
-    this.bgColor = environment.bgColor;
+    this.envDataService.getEnvironment()
+      .subscribe((data) => {
+        this.environment = data;
+      });
   }
 }
