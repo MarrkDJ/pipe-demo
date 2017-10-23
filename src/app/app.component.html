@@ -1,5 +1,22 @@
 <div class="main" [style.background-color]="environment.color">
   <div class="text-div">
-    <span class="text-color">{{environment.name}}</span>
+    <div class="env" style="font-size: 3em;">
+      Local
+    </div>
+    <div class="expl">
+      This page is part of a three part pipeline. Each part contains the same code base, but adapts to the environment. Check the links below to see the differences.
+    </div>
+    <div class="links" style="">
+      <div class="link" >
+        <a href="pipe-demo-dev.herokuapp.com" target="blank" style="">Development</a>
+      </div>
+      <div class="link">
+        <a href="pipe-demo-acc.herokuapp.com" target="blank">Acceptance</a>
+      </div>
+      <div class="link">
+        <a href="pipe-demo-prod.herokuapp.com" target="blank">Production</a>
+      </div>
+    </div>
   </div>
 </div>
+
