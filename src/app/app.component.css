@@ -5,7 +5,7 @@
 }
 .text-div {
   margin: auto;
-  width: 400px;
+  width: 300px;
   text-align: center;
   font-family: monospace;
   color: white;
@@ -18,7 +18,7 @@
   flex: 0 1 auto;
 }
 .links {
-  font-size: 1.5em;
+  font-size: 1.2em;
   display: flex;
   flex: 0 1 auto;
 }
@@ -34,4 +34,15 @@
 }
 .github-link img {
   width: 100px;
+}
+
+@media screen and (min-width: 400px) {
+  .text-div {
+    width: 400px;
+  }
+  .links {
+    font-size: 1.5em;
+    display: flex;
+    flex: 0 1 auto;
+  }
 }
