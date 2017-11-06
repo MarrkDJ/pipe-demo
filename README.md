@@ -48,3 +48,7 @@ Lets deploy!
 Lets promote!
 * On the active app, click Promote to ....
 * When done, you can open the app and it should have a different color and text!
+
+Something to consider:
+I hardcoded the links to my environments in the app.component.html. You can change the links to represent your stages.
+The format is: <appname>.herokuapp.com
