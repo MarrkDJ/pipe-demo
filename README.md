@@ -46,5 +46,5 @@ Lets deploy!
 * When it is done deploying, click options again and click Open app in browser. It should have the color and text of your choosing
 
 Lets promote!
-* On the active app, click Promote to ...
+* On the active app, click Promote to ....
 * When done, you can open the app and it should have a different color and text!
