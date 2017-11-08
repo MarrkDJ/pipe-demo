@@ -1,4 +1,4 @@
-# Heroku pipe demo with environtment vars weonufwoiehjfwoieg
+# Heroku pipe demo with environtment vars
 
 This project will demonstrate Heroku pipelines with config vars (environment variables).
 After following this demo, you will have a project with multiple environments. Every environment will be the same in source code, but different in appearance, due to environment variables.
